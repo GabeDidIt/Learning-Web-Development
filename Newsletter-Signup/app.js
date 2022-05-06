@@ -42,7 +42,6 @@ app.post("/", function(req, res) {
           LNAME: subscribingUser.lastName
         }
       });
-      console.log(response);
       res.sendFile(__dirname + "/success.html");
     } catch (err) {
       console.log("====== ERROR ======");
